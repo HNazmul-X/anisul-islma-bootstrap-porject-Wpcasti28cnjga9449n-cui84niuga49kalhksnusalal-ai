@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+:root {
+  --handlee: 'Handlee', cursive;
+  --montserrat: 'Montserrat Alternates', sans-serif;
+  --roboto: 'Roboto', sans-serif;
+  --aero-blue: #d7fff1ff;
+  --baby-pink: #fac8cdff;
+  --queen-pink: #d7bcc8ff;
+  --dark-liver: #564e58ff;
+  --green-sheen: #77af9cff;
+  --castleton-green: #285943ff;
+}
+
+body {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--roboto);
+}
+
+.container {
+  margin: auto;
+  padding: 0 !important;
+}
+
+.jumbotron {
+  background: transparent;
+}
+
+hr {
+  background: #dddddd63;
+  border: 1px solid #dddddd63;
+}
+
+/* =================================================================
+==================================================================== */
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000062), to(#00000062)), url(images/9b1de6df13a127d53f0f77a587a33bf0.jpg) no-repeat center fixed;
+  background: linear-gradient(#00000062, #00000062), url(images/9b1de6df13a127d53f0f77a587a33bf0.jpg) no-repeat center fixed;
+  width: 100%;
+}
+
+#Navbar {
+  background: #00000081;
+}
+
+#Navbar button span {
+  color: white !important;
+}
+
+#Navbar button:focus {
+  outline: none !important;
+}
+
+#Navbar #navbarNav .nav-item .nav-link {
+  color: white !important;
+  padding: 15px 30px;
+  line-height: 2.5;
+}
+
+.header_banner {
+  height: 100vh;
+}
+
+.header_banner h1 {
+  font-size: 4.5rem;
+  font-family: var(--handlee);
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background: #d7fff1ab;
+  color: var(--dark-liver) !important;
+  border-radius: 20px;
+}
+
+#Navbar #navbarNav .nav-item .nav-link:hover {
+  background: tomato;
+  color: #0a0a0a;
+}
+
+/* header end */
+/* features section strat */
+#feature {
+  background: var(--castleton-green);
+  color: white;
+  padding-bottom: 5%;
+}
+
+#feature .card-cover {
+  border: 2px solid var(--green-sheen);
+  padding: 2% 3%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#feature .card-cover:hover {
+  -webkit-box-shadow: 1rem 1.5rem 2rem -0.7rem var(--green-sheen);
+          box-shadow: 1rem 1.5rem 2rem -0.7rem var(--green-sheen);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#feature .card-cover i {
+  background: var(--green-sheen);
+  margin-bottom: 5px;
+}
+
+/* about me section */
+#about_me {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000044), to(#00000044)), url(images/nazmul__ienio.jpg) no-repeat center fixed;
+  background: linear-gradient(#00000044, #00000044), url(images/nazmul__ienio.jpg) no-repeat center fixed;
+  background-size: cover;
+  color: var(--baby-pink);
+}
+
+#about_me .icon-style {
+  background: var(--baby-pink);
+  color: var(--castleton-green);
+  border: 1px solid var(--castleton-green);
+}
+
+#about_me .about_me_col {
+  background: #000000ab;
+  margin: 5%;
+  border-radius: 10px;
+}
+
+#about_me strong {
+  color: white;
+}
+
+/*tutorial section start here*/
+#Tutorials_head {
+  background: var(--castleton-green);
+  color: white;
+  padding: 2%;
+  padding-bottom: 4%;
+}
+
+#Tutorials_head p {
+  font-family: var(--roboto);
+}
+
+#Tutorials_head h1, #Tutorials_head h2, #Tutorials_head h3, #Tutorials_head h4, #Tutorials_head h5, #Tutorials_head h6, #Tutorials_head button {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+#Tutorials_head .all_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Tutorials_head .all_card .Cards_box {
+  padding: 0px 0%;
+  color: black;
+  margin: 10px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#Tutorials_head .all_card .Cards_box:hover {
+  -webkit-box-shadow: 0px 0px 10px 3px #ffffffff;
+          box-shadow: 0px 0px 10px 3px #ffffffff;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#Tutorials_head .all_card .Cards_box .card.a {
+  width: 200px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#Tutorials_head .all_card .Cards_box .card.a h3 {
+  font-size: 20px;
+}
+
+#feadback {
+  background: var(--baby-pink);
+}
+
+#feadback .carusal_cover .carousel-inner .carousel-item .carousel__item__inner .inner__desc {
+  padding: 2rem;
+  text-align: center;
+}
+
+#feadback .carusal_cover .carousel-inner .carousel-item .carousel__item__inner .inner__img {
+  padding: 2rem;
+  text-align: center;
+}
+
+/*footer section start from here */
+#footer {
+  background: #162521;
+  color: #686e70;
+}
+
+#footer .footer-button .footer_more_ways_btn i:hover {
+  color: white !important;
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#footer .footer_copywrite {
+  background: #121f1b;
+}
+/*# sourceMappingURL=style.css.map */
